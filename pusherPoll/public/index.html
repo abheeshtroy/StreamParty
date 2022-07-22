@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+    <link rel="stylesheet" href="style.css">
+    
+    <title>PollApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Question 1</h1>
+        <p>Which club has the most number of UCL titles</p>
+        <form id="vote-form">
+            <p>
+                <input type="radio" name="option" id="option1" value="Barcelona">
+                <label for="option1">Barcelona</label>
+            </p>
+    
+            <p>
+                <input type="radio" name="option" id="option2" value="RealMadrid">
+                <label for="option2">Real Madrid</label>
+            </p>
+    
+            <p>
+                <input type="radio" name="option" id="option3" value="Liverpool">
+                <label for="option3">Liverpool</label>
+            </p>
+    
+            <p>
+                <input type="radio" name="option" id="option4" value="Arsenal">
+                <label for="option4">Arsenal</label>
+            </p>
+    
+            <button type="submit" value="Vote" class="btn">Vote</button>
+        </form>
+
+        <br><br>
+
+        <div id="chartContainer" style="height: 300px; width:100%"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.1.1-beta/pusher.min.js" integrity="sha512-BPyqC/fsFB0wLkveLSwmEDvb8AHSezUQqCSL2mMieTTPvC4BfjIJIuLVH+4M6cRJFvYiwvdW1DKcVg77g4Mlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
